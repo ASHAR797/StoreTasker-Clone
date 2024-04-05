@@ -1,0 +1,1169 @@
+@font-face {
+    font-family: 'Roobert-Medium';
+    src: url(./assets/font-folder/Roobert-Medium.b070ea1c22a12b088decdcfa726b82f4.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roobert-Medium';
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body button {
+    cursor: pointer;
+}
+
+.header {
+    padding: 16px 30px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    color: white;
+}
+
+header div:nth-child(2) {
+    display: none;
+}
+
+.header h3 {
+    font-weight: 200;
+    font-size: 22.3px;
+}
+
+.nav {
+    width: 90%;
+}
+
+.nav-ul {
+    list-style: none;
+    font-size: 17px;
+    gap: 50px;
+}
+
+.nav-links {
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links button {
+    padding: 16px 22px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #D5C9B4;
+    border: none;
+    border-radius: 3px;
+}
+
+.sec-1-first-container {
+    height: 37.2rem;
+    background-color: #D99003;
+    align-items: end;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.sec-1-first-container .sec-1-first-container-left {
+    height: 68%;
+    width: 48%;
+    gap: 40px;
+    margin: 55px 50px;
+    padding: 1px 5px;
+    color: white;
+    z-index: 1;
+}
+
+.sec-1-first-container-left h1 {
+    font-size: 65px;
+    font-weight: 100;
+    letter-spacing: -2px;
+    margin-bottom: 35px;
+    line-height: 65px;
+}
+
+.sec-1-first-container-left p {
+    width: 70%;
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.sec-1-first-container-ul {
+    list-style: none;
+    gap: 24px;
+}
+
+.sec-1-first-container-inner-wrapper {
+    padding: 20px 0px;
+}
+
+.sec-1-first-container button {
+    padding: 20px 30px;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 3px;
+    border: 0px;
+}
+
+.sec-1-first-container-inner-wrapper>div:nth-child(2) {
+    background-image: url(https://www.storetasker.com/_next/static/media/five-stars.f0909102228f67c76d2f04118e768f53.png);
+    background-repeat: no-repeat;
+    height: 40px;
+    display: flex;
+    align-items: end;
+    margin-left: 25px;
+}
+
+.sec-1-first-container-right {
+    height: 120%;
+    width: 59%;
+    position: absolute;
+    right: 0px;
+    background-image: url(./assets/img-folder/rootless-home-product.e8423b29ef7e105f940e529e3a9ed9d6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+}
+
+.sec-1-wrapper {
+    height: 17rem;
+}
+
+.sec-1-card {
+    height: 19rem;
+    z-index: 2;
+    text-align: center;
+    width: 14rem;
+}
+
+.sec-1-card div:nth-child(2) {
+    height: 15%;
+}
+
+.sec-1-card:nth-child(5) {
+    width: 21rem;
+    height: 24rem;
+    position: relative;
+    top: -80px;
+}
+
+.sec-1-card:nth-child(5) div:nth-child(2) {
+    height: 13%;
+}
+
+.sec-1-card div:nth-child(1) {
+    height: 90%;
+    background-size: cover;
+}
+
+.sec-1-card:nth-child(5) div:nth-child(1) {
+    height: 92.3%;
+    background-size: cover;
+}
+
+.sec-1-card:nth-child(1) div:nth-child(1) {
+    background-image: url(./assets/img-folder/chubbies-home-product.73634b86780bd0980866a5ccacd51b73.png);
+}
+
+.sec-1-card:nth-child(2) div:nth-child(1) {
+    background-image: url(./assets/img-folder/branch-home-product.1aceb9adc3cfdc250dc42cc50eb2cfda.png);
+}
+
+.sec-1-card:nth-child(3) div:nth-child(1) {
+    background-image: url(./assets/img-folder/derma-home-product.0bdd1bfa7229a4e863acc4e720fee33a.png);
+}
+
+.sec-1-card:nth-child(4) div:nth-child(1) {
+    background-image: url(./assets/img-folder/judy-home-product.3a57693ac0ce6a3921245f4bbc60ab44.png);
+}
+
+.sec-1-card:nth-child(5) div:nth-child(1) {
+    background-image: url(./assets/img-folder/rootless-home-product.e8423b29ef7e105f940e529e3a9ed9d6.png);
+}
+
+.sec-1-card:nth-child(6) div:nth-child(1) {
+    background-image: url(./assets/img-folder/branch-home-product.1aceb9adc3cfdc250dc42cc50eb2cfda.png);
+}
+
+.sec-1-card:nth-child(7) div:nth-child(1) {
+    background-image: url(./assets/img-folder/ripple-home-product.394b8aa9b134e4c464e66e1edab392b6.png);
+}
+
+.sec-1-card:nth-child(8) div:nth-child(1) {
+    background-image: url(./assets/img-folder/chubbies-home-product.73634b86780bd0980866a5ccacd51b73.png);
+}
+
+.sec-1-card:nth-child(9) div:nth-child(1) {
+    background-image: url(./assets/img-folder/judy-home-product.3a57693ac0ce6a3921245f4bbc60ab44.png);
+}
+
+.sec-1-card:nth-child(10) div:nth-child(1) {
+    background-image: url(./assets/img-folder/chubbies-home-product.73634b86780bd0980866a5ccacd51b73.png);
+}
+
+.sec-1-third-container {
+    height: 27rem;
+    background-color: #D99003;
+    padding: 60px;
+    color: white;
+}
+
+.sec-1-third-container h1,
+.sec-1-third-container span {
+    font-size: 65px;
+    line-height: 72px;
+    font-weight: 500;
+}
+
+.sec-1-third-container p {
+    font-size: 20px;
+    line-height: 25px;
+    width: 63%;
+    padding: 33px 0px;
+}
+
+.sec-1-third-container a {
+    color: white;
+    font-size: 17px;
+    line-height: 25px;
+    border-bottom: 2px solid;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.sec-2 {
+    padding: 60px 60px 110px 60px;
+    gap: 72px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.sec-2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+.sec-2 h1 span {
+    font-family: ppwriter-regular-italic, serif;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sec-2-main-container>div {
+    gap: 18px;
+}
+
+.sec-2-main-container>div h2 {
+    width: 62%;
+    margin: 6px 0px;
+}
+
+.sec-2-main-container>div p {
+    width: 82%;
+    font-family: fk_displayregular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;
+    line-height: 20px;
+    color: #525252;
+    letter-spacing: -.01em;
+}
+
+.sec-3-first-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 60px;
+}
+
+.sec-3-first-container h2 {
+    font-size: 35px;
+    font-weight: 100;
+    width: 41%;
+    line-height: 40px;
+}
+
+.sec-3-first-container p {
+    width: 26%;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.sec-3-second-container {
+    padding: 40px 40px 15px 31px;
+}
+
+.sec-3-second-container-first-child h3 {
+    font-size: 25px;
+}
+
+.sec-3-second-container-first-child h3 span {
+    font-family: ppwriter-regular-italic, serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 28px;
+    opacity: .26;
+    margin-left: 5px;
+}
+
+.sec-3-second-container-first-child button {
+    color: #000;
+    letter-spacing: -.04em;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10rem;
+    padding: 10px 15px;
+    font-size: 17px;
+    background-color: white;
+}
+
+.sec-3-second-container-first-child button span:nth-child(2) {
+    font-size: 23px;
+    margin-top: -7px;
+}
+
+.sec-3-second-container-first-child {
+    margin-bottom: 45px;
+}
+
+.sec-3-second-container-first-child-slider-main {
+    width: 100%;
+    overflow-x: scroll;
+    position: relative;
+    padding: 0px 0px 10px 0px;
+}
+
+.sec-3-second-container-first-child-slider,
+.sec-3-second-container-second-child-slider,
+.sec-3-second-container-third-child-slider {
+    height: 23rem;
+    width: 130%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.sec-3-second-container-first-child-slider>div,
+.sec-3-second-container-second-child-slider>div,
+.sec-3-second-container-third-child-slider>div {
+    width: 16rem;
+    height: 100%;
+    margin: 0px 4px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.sec-3-second-container-first-child-slider>div {
+    background-image: url(https://www.storetasker.com/_next/static/media/david-ex.265f7a8cd06c6b0f7a4e3fda163a3499.png);
+}
+
+.sec-3-second-container-second-child-slider>div {
+    background-image: url(https://www.storetasker.com/_next/static/media/leif-ex.8c2580424763090e6f38e36db52fb41a.png);
+}
+
+.sec-3-second-container-third-child-slider>div {
+    background-image: url(https://www.storetasker.com/_next/static/media/colin-ex.b163656d395d347c5d602be3152b9f41.png);
+}
+
+.sec-3-third-container-btn {
+    color: #000;
+    letter-spacing: -.04em;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 10rem;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: white;
+}
+
+.sec-3-third-container {
+    padding: 0px 32px 80px 32px;
+    gap: 45px;
+}
+
+.sec-3-third-container-btn span:nth-child(2) {
+    font-size: 23px;
+    margin-top: -7px;
+}
+
+.sec-3-third-container h3 {
+    font-size: 24px;
+    letter-spacing: -0.5px;
+}
+
+.sec-3-third-container-inner-main-container {
+    width: 85%;
+}
+
+.sec-3-third-container-inner-main-container h3 {
+    margin: 10px 0px;
+    padding-bottom: 5px;
+    font-size: 30px;
+    line-height: 40px;
+    font-family: ppwriter-regular-italic, serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.sec-3-third-container-inner-main-container-ul {
+    list-style: none;
+    gap: 15px;
+}
+
+.sec-4 {
+    padding: 36px 42px;
+}
+
+.sec-4 h1 {
+    font-size: 65px;
+    line-height: 70px;
+    font-weight: 100;
+    letter-spacing: -0.4px;
+}
+
+.sec-4 div:nth-child(2) h1 {
+    margin: 10px 0px;
+    padding-bottom: 5px;
+    font-size: 65px;
+    line-height: 70px;
+    font-family: ppwriter-regular-italic, serif;
+    font-style: italic;
+}
+
+.sec-4 ul {
+    list-style: none;
+    gap: 17px;
+    font-size: 24px;
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.sec-4-last-container {
+    gap: 30px;
+    height: 15em;
+    margin: 60px 0px;
+}
+
+.sec-4-last-container div:nth-child(1),
+.sec-4-last-container div:nth-child(3) {
+    justify-content: end;
+}
+
+.sec-4-last-container-main {
+    align-items: end;
+    gap: 5px;
+}
+
+.sec-4-last-container-main>div:nth-child(1) {
+    padding: 0px 10px;
+    border: 1.9px solid black;
+    letter-spacing: 1px;
+    position: relative;
+    top: 19px;
+    right: 15px;
+    background: white;
+}
+
+.sec-4-last-container-main>div:nth-child(3) {
+    font-weight: 900;
+}
+
+.sec-4-last-container-main-card {
+    height: 139px;
+    width: 271px;
+    background-color: black;
+    padding: 20px;
+}
+
+.sec-4-card-title {
+    font-size: 24px;
+    color: white;
+    line-height: 27px;
+    font-weight: 100;
+}
+
+.sec-4-card-content {
+    width: 72%;
+    color: #ADADAD;
+}
+
+.sec-5-main-container {
+    width: 98%;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    height: 42em;
+}
+
+.sec-5-left-container-main {
+    width: 50%;
+    gap: 35px;
+    padding: 50px 45px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.profile-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/main-icon-annie.dd0a689c0740e7f153fe401ee8f90ead.png);
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.bag-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/main-icon-alo.73f24d50ab23b33e46121de5216b25a2.png);
+    height: 80px;
+    width: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.sec-5-left-container-tabs {
+    width: 90%;
+    margin-bottom: 35px;
+    padding: 15px;
+}
+
+.sec-5-left-container-tabs div {
+    height: 28px;
+    width: 98px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sec-5-left-container-tabs div:nth-child(1) {
+    background-image: url(https://www.storetasker.com/_next/static/media/logo-toggle-alo.a7d6d52b5a601d576e23cb513adef45a.png);
+}
+
+.sec-5-left-container-tabs div:nth-child(2) {
+    background-image: url(https://www.storetasker.com/_next/static/media/logo-toggle-samsonite.0e8af43f3c31710009be5d32c617d140.png);
+}
+
+.sec-5-left-container-tabs div:nth-child(3) {
+    background-image: url(https://www.storetasker.com/_next/static/media/logo-toggle-judy.4225974e9259c8e35acbfef31dd7aa42.png);
+}
+
+.sec-5-left-container-tabs div:nth-child(4) {
+    background-image: url(https://www.storetasker.com/_next/static/media/logo-toggle-asystem.cd03052d0d54ee86dc8dfb21000f14d6.png);
+}
+
+.sec-5-left-container-title h1 {
+    line-height: 86px;
+    font-size: 80px;
+    display: flex;
+    gap: 7px;
+}
+
+.sec-5-left-container-description {
+    margin: 30px 0px;
+    gap: 10px;
+}
+
+.sec-5-left-container-description p {
+    font-size: 20px;
+    width: 94%;
+}
+
+.sec-5-left-container-description span {
+    font-weight: bold;
+    color: #00000066;
+    font-size: 13px;
+    letter-spacing: 1.1px;
+}
+
+.sec-5-left-container-description div:nth-child(2) {
+    gap: 20px;
+}
+
+.quote-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/quote-icon-black.f427711373e43cb8e103c628be73c36d.png);
+    height: 30px;
+    width: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-5-right-container-main {
+    font-size: 20px;
+    line-height: 50px;
+    width: 50%;
+    background-color: #FAFAFA;
+    height: 100%;
+    padding: 0px 75px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.sec-5-right-container-main .line {
+    width: 2px;
+    border-radius: 10px;
+    height: 40px;
+    margin: 7px 2px;
+    background-color: #DFDFDF;
+}
+
+.clinet-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/main-icon-annie.dd0a689c0740e7f153fe401ee8f90ead.png);
+    height: 45px;
+    width: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 11px 0px -20px;
+}
+
+.freelancer-description {
+    margin-left: -10px;
+}
+
+.freelancer-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/steps-icon-leif.6a5ccd61fc33e26fc8a28f5d2ef40c86.png);
+    height: 50px;
+    width: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 10px;
+}
+
+.aloyoga-icon {
+    background-image: url(https://www.storetasker.com/_next/static/media/steps-icon-alo.9d8b0bed47d59613e1f0867f1fde762a.png);
+    height: 45px;
+    width: 45px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 11px 0px -20px;
+}
+
+.sec-6-card {
+    width: 50%;
+    font-size: 18px;
+}
+
+.sec-6-card img {
+    margin-left: 16px;
+}
+
+.sec-6-card-profile-img {
+    background-image: url(https://www.storetasker.com/_next/static/media/human-photo-mudwater.5096a19c8066df85ef6740e129ebb99d.png);
+    width: 43px;
+    height: 43px;
+    background-size: cover;
+    background-position: center;
+}
+
+.sec-6-card-profile {
+    gap: 15px;
+    font-size: 14px;
+    margin: 21px 16px;
+    line-height: 17px;
+}
+
+.brush-description>div {
+    background-image: url(https://www.storetasker.com/_next/static/media/quote-icon-black.f427711373e43cb8e103c628be73c36d.png);
+    height: 28px;
+    width: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px 11px 0px -20px;
+}
+
+.sec-6 {
+    width: 98%;
+    height: 43em;
+    margin: 15px auto;
+    background-color: #E6C183;
+    border-radius: 7px;
+    padding: 50px 35px;
+    position: relative;
+}
+
+.sec-6-right-inner-container {
+    width: 97%;
+    position: absolute;
+    overflow-x: hidden;
+    left: 41px;
+}
+
+.sec-6-card-main {
+    display: flex;
+    position: relative;
+    left: 265px;
+    margin-top: 91px;
+}
+
+.sec-6-card>div {
+    width: 22em;
+    margin-right: 33px;
+}
+
+.sec-6-card:nth-child(1)>div {
+    color: white;
+}
+
+.brand-product {
+    background-image: url(https://www.storetasker.com/_next/static/media/bg-topper-bruush.3526d6a6c13d0f838828f290dae2e9a6.png);
+    height: 11em;
+    width: 9em;
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 4px;
+    left: 56px;
+}
+
+.brand-img {
+    height: 100%;
+    margin: auto 10px;
+    width: 35vw;
+    background-color: #00000066;
+    background-image: url(https://www.storetasker.com/_next/static/media/bg-full-bruush.7f0ce8ca7de74e393774941294c66253.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec-6 h1 {
+    font-size: 70px;
+    color: white;
+    font-weight: 100;
+    margin: 0px 109px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+}
+
+.sec-7 {
+    padding: 70px 95px;
+    background-color: #F8F8F8;
+}
+
+.sec-7 h1 {
+    font-size: 70px;
+    font-weight: 100;
+    width: 69%;
+    line-height: 75px;
+    letter-spacing: -1px;
+}
+
+.sec-7 p {
+    width: 64%;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: end;
+    font-weight: 100;
+}
+
+.sec-7 button {
+    margin: 14px 0px;
+    padding: 18px 32px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 40px 0px;
+}
+
+.footer ul {
+    font-weight: 100;
+    list-style: none;
+    gap: 12px;
+    font-size: 25px;
+}
+
+.footer div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px;
+}
+
+.footer div:nth-child(1)>div {
+    width: 30%;
+}
+
+.footer p {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    /* width: 100%; */
+    font-family: ppwriter-regular-italic, serif;
+    font-weight: 100;
+    font-style: italic;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 35px;
+    line-height: 30px;
+    letter-spacing: -.01em;
+    color: #fff;
+    padding-bottom: 50px;
+    margin-bottom: 35px;
+    width: 80%;
+    line-height: 40px;
+}
+
+.footer button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 23px;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+.footer div:nth-child(2) ul {
+    font-size: 15px;
+    color: gray;
+    margin-left: 25px;
+}
+
+.footer>div:nth-child(2)>div:nth-child(2) {
+    width: 58%;
+    margin-left: 23px;
+}
+
+.social-media-links {
+    width: 15.5%;
+}
+
+@media (max-width:797px) {
+    header div:nth-child(2) {
+        display: block;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    .sec-1-first-container-right {
+        width: 100%;
+        filter: blur(10px) brightness(0.7);
+    }
+
+    .sec-1-first-container .sec-1-first-container-left {
+        width: 77%;
+        gap: 11px;
+        margin: 55px 10px;
+        padding: 1px 5px;
+        color: white;
+        z-index: 1;
+    }
+
+    .sec-1-first-container-left h1 {
+        font-size: 28px;
+        font-weight: 100;
+        letter-spacing: 0px;
+        margin-bottom: 25px;
+        line-height: 37px;
+    }
+
+    .sec-1-first-container-ul {
+        gap: 10px;
+        font-size: 15px;
+    }
+
+    .sec-1-first-container-left p {
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .sec-1-first-container button {
+        padding: 20px;
+        font-size: 18px;
+        font-weight: 900;
+        border-radius: 3px;
+        border: 0px;
+        width: 9.4em;
+    }
+
+    .sec-1-first-container-inner-wrapper>div:nth-child(2) {
+        display: none;
+    }
+
+    .sec-1-second-container {
+        overflow-x: clip;
+    }
+
+    .sec-1-third-container {
+        flex-direction: column;
+    }
+
+    .sec-1-third-container h1,
+    .sec-1-third-container span {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .sec-1-third-container p {
+        font-size: 18px;
+        line-height: 24px;
+        width: 100%;
+    }
+
+    .sec-1-third-container {
+        padding: 60px 30px;
+    }
+
+    .sec-2 {
+        padding: 60px 60px 110px 30px;
+        gap: 72px;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .sec-2-main-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sec-2 h1 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .sec-3-first-container {
+        padding: 70px 30px;
+        flex-direction: column;
+    }
+
+    .sec-3-first-container h2 {
+        font-size: 31px;
+        font-weight: 100;
+        width: 100%;
+        line-height: 40px;
+        margin: 17px 0px;
+    }
+
+    .sec-3-first-container p {
+        width: 100%;
+    }
+
+    .sec-3-second-container-first-child-slider,
+    .sec-3-second-container-second-child-slider,
+    .sec-3-second-container-third-child-slider {
+        width: 541%;
+    }
+
+    .sec-3-second-container-first-child button,
+    .sec-3-third-container-btn {
+        display: none !important;
+    }
+
+    .sec-3-third-container-inner-main-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sec-4 h1 {
+        font-size: 35px;
+        line-height: 48px;
+    }
+
+    .sec-4 div:nth-child(2) h1 {
+        font-size: 35px;
+        line-height: 42px;
+    }
+
+    .sec-4>div>div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    .sec-4 ul {
+        gap: 13px;
+        font-size: 20px;
+        margin-left: 0px;
+    }
+
+    .sec-4-last-container {
+        gap: 30px;
+        margin: 60px 0px;
+        align-items: center;
+        height: unset;
+        flex-direction: column;
+    }
+
+    .sec-4-last-container-main-card {
+        height: 170px;
+        width: 360px;
+    }
+
+    .sec-5-left-container-tabs,
+    .sec-5-left-container-description p,
+    .sec-5-left-container-description span,
+    .brand-product {
+        display: none !important;
+    }
+
+    .sec-5-left-container-title h1 {
+        line-height: 45px;
+        font-size: 35px;
+    }
+
+    .sec-5-left-container-main {
+        width: 100%;
+        gap: 35px;
+        padding: 30px 17px;
+    }
+
+    .profile-icon,
+    .bag-icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .sec-5-main-container {
+        flex-direction: column !important;
+    }
+
+    .sec-5-left-container-description {
+        display: none !important;
+    }
+
+    .sec-5-right-container-main {
+        font-size: 15px;
+        line-height: 24px;
+        width: 100%;
+        padding: 46px 49px;
+    }
+
+    .sec-6 {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+    }
+
+    .sec-6 h1 {
+        font-size: 35px;
+        font-weight: 100;
+        margin: 0px 0px;
+        line-height: 40px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+    }
+
+    .sec-6-right-inner-container {
+        width: 122%;
+        position: absolute;
+        overflow-x: hidden;
+        left: -91px;
+        bottom: 88px;
+    }
+
+    .brand-img {
+        height: 30em;
+        margin: auto 10px;
+        width: 76vw;
+        background-color: #00000066;
+        background-image: url(https://www.storetasker.com/_next/static/media/bg-full-bruush.7f0ce8ca7de74e393774941294c66253.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 16px -9px;
+    }
+
+    .sec-6-card-main {
+        display: flex;
+        position: relative;
+        left: 265px;
+        margin-top: 91px;
+        gap: 73px;
+    }
+
+    .sec-6-right-inner-container {
+        width: 157%;
+        position: absolute;
+        overflow-x: hidden;
+        left: -231px;
+        bottom: 88px;
+    }
+
+    .sec-6-card p {
+        width: 87%;
+        font-size: 22px;
+        text-shadow: 0px 0px 10px brown;
+    }
+
+    .sec-7 {
+        align-items: center;
+        flex-direction: column !important;
+        padding: 70px 35px;
+    }
+
+    .sec-7 h1 {
+        font-size: 29px;
+        font-weight: 100;
+        width: 94%;
+        line-height: 40px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    .sec-7 p {
+        width: 100%;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: end;
+        font-weight: 100;
+        margin: 13px 0px;
+    }
+
+    .sec-7 div:nth-child(2) {
+        align-items: center !important;
+    }
+
+    .footer>div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        padding: 42px;
+        flex-wrap: wrap;
+        gap: 46px;
+    }
+
+    .footer ul {
+        font-size: 19px;
+    }
+
+    .footer>div:nth-child(1)>div {
+        width: 100%;
+    }
+    .footer div:nth-child(2) ul{
+        flex-wrap: wrap;
+    }
+
+    .footer>div:nth-child(2)>div:nth-child(2) img {
+        width: 85%;
+        margin: 30px 0px;
+    }
+
+    .footer p {
+        padding-bottom: 30px;
+        margin-bottom: 0px;
+        width: 80%;
+        line-height: 40px;
+    }
+}
