@@ -13,6 +13,9 @@
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+    padding: 5px 0px 5px 5px
 }
 
 body button {
@@ -20,11 +23,18 @@ body button {
 }
 
 .header {
-    padding: 16px 30px;
+    transition: background-color 0.2s ease-in-out;
+    padding: 11px 0px 16px 30px;
     position: absolute;
     width: 100%;
     z-index: 999;
+    position: fixed;
+    top: 0px;
     color: white;
+    gap: 34px;
+}
+.header.scrolled {
+    background-color: black; /* Scrolled color */
 }
 
 header div:nth-child(2) {
@@ -53,15 +63,34 @@ header div:nth-child(2) {
 .nav a {
     text-decoration: none;
     color: white;
+    font-size: 15px;
+    padding-bottom: 6px;
+}
+
+.nav a:hover {
+    border-bottom: 1px solid;
 }
 
 .nav-links button {
     padding: 16px 22px;
     font-size: 15px;
     font-weight: bold;
-    background-color: #D5C9B4;
+    background-color: #FFE9BE;
     border: none;
+    font-weight: 600;
     border-radius: 3px;
+    letter-spacing: .2px;
+}
+
+header nav div:nth-child(2) {
+    display: flex;
+}
+
+/* Section - 1 */
+.sec-1 {
+    overflow: hidden;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .sec-1-first-container {
@@ -76,7 +105,7 @@ header div:nth-child(2) {
     height: 68%;
     width: 48%;
     gap: 40px;
-    margin: 55px 50px;
+    margin: 75px 36px;
     padding: 1px 5px;
     color: white;
     z-index: 1;
@@ -85,9 +114,9 @@ header div:nth-child(2) {
 .sec-1-first-container-left h1 {
     font-size: 65px;
     font-weight: 100;
-    letter-spacing: -2px;
+    letter-spacing: 0px;
     margin-bottom: 35px;
-    line-height: 65px;
+    line-height: 75px;
 }
 
 .sec-1-first-container-left p {
@@ -95,11 +124,22 @@ header div:nth-child(2) {
     font-size: 21px;
     line-height: 28px;
     margin-bottom: 30px;
+    margin-top: 17px;
 }
 
 .sec-1-first-container-ul {
     list-style: none;
-    gap: 24px;
+    gap: 18px;
+}
+
+.sec-1-first-container-ul a {
+    color: white;
+    font-size: 18px;
+    transition: 0.3s linear;
+}
+
+.sec-1-first-container ul li a:hover {
+    color: #F0D39A;
 }
 
 .sec-1-first-container-inner-wrapper {
@@ -112,6 +152,12 @@ header div:nth-child(2) {
     font-weight: 900;
     border-radius: 3px;
     border: 0px;
+    transition: 0.2s linear;
+    background-color: #FFE9BE;
+}
+
+.sec-1-first-container button:hover {
+    background-color: #FFF8EB;
 }
 
 .sec-1-first-container-inner-wrapper>div:nth-child(2) {
@@ -123,16 +169,21 @@ header div:nth-child(2) {
     margin-left: 25px;
 }
 
+.sec-1-first-container-inner-wrapper {
+    gap: 11px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .sec-1-first-container-right {
     height: 120%;
-    width: 59%;
+    width: 56%;
     position: absolute;
     right: 0px;
     background-image: url(./assets/img-folder/rootless-home-product.e8423b29ef7e105f940e529e3a9ed9d6.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    filter: blur(10px);
+    filter: blur(10px) contrast(120%) brightness(75%);
 }
 
 .sec-1-wrapper {
@@ -212,10 +263,11 @@ header div:nth-child(2) {
 }
 
 .sec-1-third-container {
-    height: 27rem;
+    height: 26rem;
     background-color: #D99003;
-    padding: 60px;
+    padding: 76px 50px;
     color: white;
+    width: 111%;
 }
 
 .sec-1-third-container h1,
@@ -229,8 +281,13 @@ header div:nth-child(2) {
     font-size: 20px;
     line-height: 25px;
     width: 63%;
-    padding: 33px 0px;
+    padding: 0px 0px;
 }
+
+.sec-1-third-container div:nth-child(2) {
+    padding: 76px 0px
+}
+
 
 .sec-1-third-container a {
     color: white;
@@ -302,7 +359,7 @@ header div:nth-child(2) {
 }
 
 .sec-3-second-container {
-    padding: 40px 40px 15px 31px;
+    padding: 40px 40px 15px 16px;
 }
 
 .sec-3-second-container-first-child h3 {
@@ -324,10 +381,14 @@ header div:nth-child(2) {
     border: 1px solid #000;
     border-radius: 20px;
     cursor: pointer;
-    width: 10rem;
-    padding: 10px 15px;
-    font-size: 17px;
+    width: 9rem;
+    padding: 10px 13px;
+    font-size: 16px;
     background-color: white;
+    transition: background-color   0.3s  ease ;
+}
+.sec-3-second-container-first-child  button:hover{
+    background-color: #EEEEEE;
 }
 
 .sec-3-second-container-first-child button span:nth-child(2) {
@@ -379,19 +440,21 @@ header div:nth-child(2) {
 
 .sec-3-third-container-btn {
     color: #000;
-    letter-spacing: -.04em;
     border: 1px solid #000;
     border-radius: 20px;
     cursor: pointer;
     width: 10rem;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 9px 15px;
+    font-size: 16px;
     background-color: white;
+}
+.sec-3-third-container-btn:hover{
+    background-color: #EEEEEE;
 }
 
 .sec-3-third-container {
-    padding: 0px 32px 80px 32px;
-    gap: 45px;
+    padding: 0px 32px 80px 21px;
+    gap: 24px;
 }
 
 .sec-3-third-container-btn span:nth-child(2) {
@@ -422,7 +485,13 @@ header div:nth-child(2) {
     list-style: none;
     gap: 15px;
 }
-
+.sec-3-third-container-inner-main-container-ul li a{
+    color: black;
+    text-decoration: none;
+}
+.sec-3-third-container-inner-main-container-ul li a:hover{
+    text-decoration: underline;
+}
 .sec-4 {
     padding: 36px 42px;
 }
@@ -441,6 +510,10 @@ header div:nth-child(2) {
     line-height: 70px;
     font-family: ppwriter-regular-italic, serif;
     font-style: italic;
+    font-weight: 100;
+}
+.sec-4 div:nth-child(2) h1 span{
+    font-style: normal ;
 }
 
 .sec-4 ul {
@@ -450,7 +523,13 @@ header div:nth-child(2) {
     margin-left: 20px;
     font-weight: 700;
 }
-
+.sec-4 ul li  a{
+    text-decoration: dashed;
+    color: black;
+}
+.sec-4 ul li:nth-child(2) a, .sec-4 ul li:nth-child(3) a{
+    color: #ABABAB;
+}
 .sec-4-last-container {
     gap: 30px;
     height: 15em;
@@ -468,12 +547,14 @@ header div:nth-child(2) {
 }
 
 .sec-4-last-container-main>div:nth-child(1) {
-    padding: 0px 10px;
+    padding: 2px 10px;
     border: 1.9px solid black;
     letter-spacing: 1px;
     position: relative;
     top: 19px;
     right: 15px;
+    font-weight: bolder;
+    font-size: 13px ;
     background: white;
 }
 
@@ -489,14 +570,14 @@ header div:nth-child(2) {
 }
 
 .sec-4-card-title {
-    font-size: 24px;
+    font-size: 22px;
     color: white;
     line-height: 27px;
     font-weight: 100;
 }
 
 .sec-4-card-content {
-    width: 72%;
+    width: 76%;
     color: #ADADAD;
 }
 
@@ -661,6 +742,7 @@ header div:nth-child(2) {
 
 .sec-6-card img {
     margin-left: 16px;
+    height: 60px;
 }
 
 .sec-6-card-profile-img {
@@ -747,7 +829,7 @@ header div:nth-child(2) {
 .sec-6 h1 {
     font-size: 70px;
     color: white;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0px 109px;
     line-height: 70px;
     letter-spacing: -1px;
@@ -755,7 +837,7 @@ header div:nth-child(2) {
 }
 
 .sec-7 {
-    padding: 70px 95px;
+    padding: 95px 95px;
     background-color: #F8F8F8;
 }
 
@@ -788,7 +870,9 @@ header div:nth-child(2) {
 .footer {
     background-color: #000;
     color: white;
-    padding: 40px 0px;
+    padding: 50px 0px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .footer ul {
@@ -797,15 +881,28 @@ header div:nth-child(2) {
     gap: 12px;
     font-size: 25px;
 }
+.footer ul li a{
+ color: white;
+ text-decoration: none;
+}
+.footer ul li a:hover{
+    text-decoration: underline;
+}
 
-.footer div:nth-child(1) {
+.footer >  div:nth-child(1) {
     display: flex;
     justify-content: space-between;
-    padding: 42px;
+    padding: 48px;
 }
 
 .footer div:nth-child(1)>div {
-    width: 30%;
+    width: 30.7%;
+    padding-left: 56px;
+    margin-left: 56px;
+}
+.footer div:nth-child(1)>div p span{
+    font-style: normal;
+    font-weight: 900;
 }
 
 .footer p {
@@ -814,7 +911,7 @@ header div:nth-child(2) {
     overflow: hidden;
     /* width: 100%; */
     font-family: ppwriter-regular-italic, serif;
-    font-weight: 100;
+    font-weight: 600;
     font-style: italic;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -824,7 +921,7 @@ header div:nth-child(2) {
     color: #fff;
     padding-bottom: 50px;
     margin-bottom: 35px;
-    width: 80%;
+    width: 95%;
     line-height: 40px;
 }
 
@@ -835,25 +932,40 @@ header div:nth-child(2) {
     border: 1px solid white;
     background: black;
     color: white;
+    transition: 0.25s;
+}
+.footer button:hover{
+    background-color: white;
+    color: black;
 }
 
 .footer div:nth-child(2) ul {
     font-size: 15px;
-    color: gray;
+    color: gray !important;
     margin-left: 25px;
+    gap: 35px;
 }
 
 .footer>div:nth-child(2)>div:nth-child(2) {
-    width: 58%;
-    margin-left: 23px;
+    width: 61%;
+    margin-left: 47px;
+    margin-bottom: 64px;
 }
-
+.footer > div:nth-child(2) > div:nth-child(2) > img{
+    width: 100%;
+}
 .social-media-links {
-    width: 15.5%;
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 41px;
+    width: 12.8%;
+}
+.social-media-links img{
+    width: 30px;
 }
 
 @media (max-width:797px) {
-    header div:nth-child(2) {
+    header>div:nth-child(2) {
         display: block;
     }
 
@@ -1151,7 +1263,8 @@ header div:nth-child(2) {
     .footer>div:nth-child(1)>div {
         width: 100%;
     }
-    .footer div:nth-child(2) ul{
+
+    .footer div:nth-child(2) ul {
         flex-wrap: wrap;
     }
 
